@@ -45,8 +45,9 @@
 
 
   "status": {
-    "text": "!help |verfy soon",
+    "text": "?help |PORE",
     "type": "STREAMING", "COMMENT:": "TYPES ARE: PLAYING, STREAMING, WATCHING, LISTENING",
+    "url" : ""
   }
 
 }
