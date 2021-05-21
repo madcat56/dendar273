@@ -46,8 +46,7 @@
 
   "status": {
     "text": "?help |PORE",
-    "type": "PLAYING"
-    "url" : ""
+    "type": ",PLAYING,"
   }
 
 }
