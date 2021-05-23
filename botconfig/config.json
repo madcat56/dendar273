@@ -46,8 +46,7 @@
 
   "status": {
     "text": "+help |PORE",
-    "type": "PLAYING", "COMMENT:": "TYPES ARE: PLAYING, STREAMING, WATCHING, LISTENING",
-    "url": "https://twitch.tv/haaama01"
+    "type": ",PLAYING,"
   }
 }
   }
