@@ -46,25 +46,57 @@ module.exports = {
           .setColor(ee.color)
           .setFooter("react with the right emoji!", ee.footericon)
           .setTitle("Pick the right Category")
-          .setDescription(`
-💪  **==>** To see the **Source Help** Commands
+          .setDescription(`istration** Commands` : ""}
+List of all commands
+• ────── emoji_102 ────── •
+☢◢User Commands
++invite - +ping 
++stats - +support
++hosting - +docs
++howtohost - +djs
 
-💰  **==>** To see the **Premium** Commands
+• ────── RAES ────── •
+☢◢Music Commands
++addprevious - +addsimilar 
++autoplay - +join
++jump - +loob 
++loobqueue - +lyrics
++move - +moveme 
++nowplaying - +pause
++play(p) - +playlist
++playsc - +play skip 
++queue - +radio
++search - +shuffle 
++stop - +volume 
+────── Sixo ────── •
++8ball - +delete
++fact - +joke
++kiss - +meme
++rip - +shit
++say - +purge
+• ────── RAES ────── •
++addbotchat - +adddj
++prefix - +removebotchat 
++reset - settings - +setup 
++toggledjoinly - +toggleplaymssnge
 
-🔰  **==>** To see the **Information** Commands
+• ────── emoji_97 ────── •
+☢◢Moderator Commands
++avatar - +botinfo - +help
++invite - +ping - +reactions
++serverinfo - +stats - +userinfo 
++uptime - +ban - +kick 
++embed - +slawmode
++unmute - +mute
++unwarn - +warn - +warnings 
 
-🕹️  **==>** To see the **Fun** Commands
-
-🎶  **==>** To see the **Music** Commands
-
-👀  **==>** To see the **Audio Filter** Commands
-
-⚜️  **==>** To see the **Saved (custom) Queue** Commands
-${owner == true ? `\n👑 **==>** To see the **Owner** Commands` : ""}
-${userperms == true ? `\n⚙️ **==>** To see the **Setting** Commands
-
-🚫  **==>** To see the **Administration** Commands` : ""}
-`)
+• ────── FILTER────── •
+☢◢Owner Commands
++bassboost - +cleareq 
++clearfilter - +equalizer 
+• ────── emoji_107 ────── •
+☢◢Links
+Invite`)
           .setImage("https://cdn.discordapp.com/attachments/752548978259787806/820014471556759601/ezgif-1-2d764d377842.gif")
 
         sendBaseEmbed();
