@@ -143,9 +143,6 @@ List of all commands
 • ────── emoji_107 ────── •
 ☢◢Links
 Invite
-${owner == true ? `\n👑 **==>** To see the **Owner** Commands` : ""}
-${userperms == true ? `\n⚙️ **==>** To see the **Setting** Commands
-🚫  **==>** To see the **Administration** Commands` : ""}
 `)
           .setImage("https://cdn.discordapp.com/attachments/752548978259787806/820014471556759601/ezgif-1-2d764d377842.gif")
 
