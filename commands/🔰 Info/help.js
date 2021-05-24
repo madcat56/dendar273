@@ -94,15 +94,16 @@ module.exports = {
           .setTitle("Pick the right Category")
           .setDescription(`
 List of all commands
-• ────── emoji_102 ────── •
-☢◢User Commands
+
+<a:7_:845582001544364033> | User Commands
+
 +invite - +ping 
 +stats - +support
 +hosting - +docs
 +howtohost - +djs
 
-• ────── RAES ────── •
-☢◢Music Commands
+<a:21:846363425155055647> | Music Commands
+
 +addprevious - +addsimilar 
 +autoplay - +join
 +jump - +loob 
@@ -114,20 +115,24 @@ List of all commands
 +queue - +radio
 +search - +shuffle 
 +stop - +volume 
-────── Sixo ────── •
+
+<a:25:846365919339872266> | GAME Commands
+
 +8ball - +delete
 +fact - +joke
 +kiss - +meme
 +rip - +shit
 +say - +purge
-• ────── RAES ────── •
+
+<a:16:846357425343037472> | Settings Commands
+
 +addbotchat - +adddj
 +prefix - +removebotchat 
 +reset - settings - +setup 
 +toggledjoinly - +toggleplaymssnge
 
-• ────── emoji_97 ────── •
-☢◢Moderator Commands
+<a:17:846357364239106118> | Moderator Commands
+
 +avatar - +botinfo - +help
 +invite - +ping - +reactions
 +serverinfo - +stats - +userinfo 
@@ -136,14 +141,12 @@ List of all commands
 +unmute - +mute
 +unwarn - +warn - +warnings 
 
-• ────── FILTER────── •
-☢◢Owner Commands
+<a:10:845585816302518282> | FILTER Commands
+
 +bassboost - +cleareq 
-+clearfilter - +equalizer 
-• ────── emoji_107 ────── •
-☢◢Links
-Invite
-`)
++clearfilter - +equalizer
+
+')
           .setImage("https://cdn.discordapp.com/attachments/752548978259787806/820014471556759601/ezgif-1-2d764d377842.gif")
 
         sendBaseEmbed();
