@@ -13,7 +13,7 @@ module.exports = {
   usage: "help [Command]",
   description: "Returns all Commmands, or one specific command",
   run: async (client, message, args, user, text, prefix) => {
-    let emojis = ["💪", "💰", "🔰", "🕹️", "🎶", "👀", "⚜️"]
+    let emojis = []
     try {
       if (args[0]) {
         const embed = new MessageEmbed();
