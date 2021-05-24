@@ -145,7 +145,7 @@ List of all commands
 
 +bassboost - +cleareq 
 +clearfilter - +equalizer
-')
+`)
           .setImage("https://cdn.discordapp.com/attachments/752548978259787806/820014471556759601/ezgif-1-2d764d377842.gif")
 
         sendBaseEmbed();
