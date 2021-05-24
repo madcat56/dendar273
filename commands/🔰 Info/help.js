@@ -145,13 +145,6 @@ List of all commands
 • ────── emoji_107 ────── •
 ☢◢Links
 Invite
-💪  **==>** To see the **Source Help** Commands
-💰  **==>** To see the **Premium** Commands
-🔰  **==>** To see the **Information** Commands
-🕹️  **==>** To see the **Fun** Commands
-🎶  **==>** To see the **Music** Commands
-👀  **==>** To see the **Audio Filter** Commands
-⚜️  **==>** To see the **Saved (custom) Queue** Commands
 ${owner == true ? `\n👑 **==>** To see the **Owner** Commands` : ""}
 ${userperms == true ? `\n⚙️ **==>** To see the **Setting** Commands
 🚫  **==>** To see the **Administration** Commands` : ""}
