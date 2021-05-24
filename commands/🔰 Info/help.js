@@ -1,5 +1,16 @@
 
-cooldown: 8,
+const { Client, Collection, MessageEmbed } = require(`discord.js`);
+const { 
+  PREFIX, 
+} = require(`../config.json`);
+
+  
+
+
+module.exports = {
+  name: "help",
+  aliases: ["h"],
+  cooldown: 8,
   description: "**all commands Pinky**",
   execute(message) {
     let commands = message.client.commands.array();
@@ -72,6 +83,7 @@ Invite
 
   }
 };
+
 
 
 
