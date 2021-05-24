@@ -156,8 +156,8 @@ Invite
 
             if (owner) emojis.push("👑")
             if (userperms) {
-              emojis.push("⚙️")
-              emojis.push("🚫")
+              emojis.push("")
+              emojis.push("")
             }
 
             for (const emoji of emojis)
