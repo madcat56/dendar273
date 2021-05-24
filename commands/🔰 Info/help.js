@@ -12,8 +12,6 @@ module.exports = {
   usage: "help [Command]",
   description: "Returns all Commmands, or one specific command",
   run: async (client, message, args, user, text, prefix) => {
-    let emojis = ["💪", "💰", "🔰", "🕹️", "🎶", "👀", "⚜️"]
-    try {
       if (args[0]) {
         const embed = new MessageEmbed();
         const cmd = client.commands.get(args[0].toLowerCase()) || client.commands.get(client.aliases.get(args[0].toLowerCase()));
@@ -101,17 +99,7 @@ Invite`)
 
         sendBaseEmbed();
 
-        async function sendBaseEmbed(basemsg) {
-          try {
-            let msg;
-            if (basemsg) msg = await basemsg.edit(baseembed)
-            else msg = await message.channel.send(baseembed);
-            
-            if (owner) emojis.push("👑")
-            if (userperms) {
-              emojis.push("⚙️")
-              emojis.push("🚫")
-            }
+      
 
             for (const emoji of emojis)
               msg.react(emoji).catch(e => console.log("couldnt add reaction"))
@@ -158,68 +146,7 @@ Invite`)
 
         function sendCategoryEmbed(category, message) {
 
-          try {
-            const items = client.commands.filter((cmd) => cmd.category === category).map((cmd) => `\`${cmd.name}\``);
-            const n = 3;
-            const result = [
-              [],
-              [],
-              []
-            ];
-            const wordsPerLine = Math.ceil(items.length / 3);
-            for (let line = 0; line < n; line++) {
-              for (let i = 0; i < wordsPerLine; i++) {
-                const value = items[i + line * wordsPerLine];
-                if (!value) continue;
-                result[line].push(value);
-              }
-            }
-
-            const embed = new MessageEmbed()
-              .setColor(ee.color)
-              .setThumbnail(client.user.displayAvatarURL())
-              .setTitle(`MENU 🔰 **${category.toUpperCase()} [${items.length}]**`)
-              .setDescription("*To go back react with:* ⏪")
-              .setFooter(`To see command descriptions and Inforamtion, type: ${config.prefix}help [CMD NAME]`, client.user.displayAvatarURL());
-
-            if (category.toLowerCase().includes("custom")) {
-              const cmd = client.commands.get(items[0].split("`").join("").toLowerCase()) || client.commands.get(client.aliases.get(items[0].split("`").join("").toLowerCase()));
-              try {
-                embed.addField(`**${category.toUpperCase()} [${items.length}]**`, `> \`${items[0]}\`\n\n**Usage:**\n> \`${cmd.usage}\``);
-              } catch {}
-            } else {
-              try {
-                embed.addField(`\u200b`, `> ${result[0].join("\n> ")}`, true);
-              } catch {}
-              try {
-                embed.addField(`\u200b`, `${result[1].join("\n") ? result[1].join("\n") : "\u200b"}`, true);
-              } catch {}
-              try {
-                embed.addField(`\u200b`, `${result[2].join("\n") ? result[2].join("\n") : "\u200b"}`, true);
-              } catch {}
-            }
-            message.edit(embed).then(msg => {
-              msg.react("⏪")
-              emojis.push("⏪")
-              const filter = (reaction, user) => {
-                return emojis.includes(reaction.emoji.name) && user.id === cmduser;
-              };
-              msg.awaitReactions(filter, {
-                  max: 1,
-                  time: 60 * 1000,
-                  errors: ['time']
-                })
-                .then(collected => {
-                  collected.first().users.remove(user.id).catch(error => console.error('Failed to clear reactions: '));
-                  var found = false;
-                  if (collected.first().emoji.name === "⏪") return sendBaseEmbed(msg);
-                  for (var i = 0; i < client.categories.length && !found; i++) {
-                    if (client.categories[i].includes(collected.first().emoji.name)) {
-                      sendCategoryEmbed(client.categories[i], msg)
-                      break;
-                    }
-                  }
-                })
+         
                 .catch(e => {
                   try {
                     message.reactions.removeAll().catch(error => console.error('Failed to clear reactions: '));
