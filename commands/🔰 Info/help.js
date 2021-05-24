@@ -93,8 +93,6 @@ module.exports = {
           .setFooter("react with the right emoji!", ee.footericon)
           .setTitle("Pick the right Category")
           .setDescription(`
-
-
 List of all commands
 • ────── emoji_102 ────── •
 ☢◢User Commands
