@@ -93,16 +93,15 @@ module.exports = {
           .setFooter("react with the right emoji!", ee.footericon)
           .setTitle("Pick the right Category")
           .setDescription(`
-List of all commands
 
-<a:7_:845582001544364033>| User Commands
+<a:7_:845582001544364033> | User Commands
 
 +invite - +ping 
 +stats - +support
 +hosting - +docs
 +howtohost - +djs
 
-<a:21:846363425155055647>| Music Commands
+<a:21:846363425155055647> | Music Commands
 
 +addprevious - +addsimilar 
 +autoplay - +join
@@ -116,7 +115,7 @@ List of all commands
 +search - +shuffle 
 +stop - +volume 
 
-<a:25:846365919339872266>| GAME Commands
+**<a:25:846365919339872266> | GAME Commands**
 
 +8ball - +delete
 +fact - +joke
@@ -124,14 +123,14 @@ List of all commands
 +rip - +shit
 +say - +purge
 
-<a:16:846357425343037472>| Settings Commands
+**<a:16:846357425343037472> | Settings Commands**
 
 +addbotchat - +adddj
 +prefix - +removebotchat 
 +reset - settings - +setup 
 +toggledjoinly - +toggleplaymssnge
 
-<a:17:846357364239106118>| Moderator Commands
+**<a:17:846357364239106118> | Moderator Commands**
 
 +avatar - +botinfo - +help
 +invite - +ping - +reactions
@@ -141,13 +140,12 @@ List of all commands
 +unmute - +mute
 +unwarn - +warn - +warnings 
 
-<a:10:845585816302518282>| FILTER Commands
+**<a:10:845585816302518282> | FILTER Commands**
 
 +bassboost - +cleareq 
 +clearfilter - +equalizer
 `)
-          .setImage("https://cdn.discordapp.com/attachments/752548978259787806/820014471556759601/ezgif-1-2d764d377842.gif")
-
+          .setImage("https://cdn.discordapp.com/attachments/845682759379714079/846374939388543036/image0.gif")
         sendBaseEmbed();
 
         async function sendBaseEmbed(basemsg) {
