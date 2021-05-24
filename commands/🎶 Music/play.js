@@ -6,7 +6,7 @@ const DeezerPublicApi = require('deezer-public-api');
 let deezer = new DeezerPublicApi();
 module.exports = {
     name: "play",
-    category: "🎶 Music Commmands",
+    category: "🎶 Music",
     aliases: ["p"],
     cooldown: 5,
     useage: "play <URL/NAME>",
