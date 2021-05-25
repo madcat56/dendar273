@@ -13,7 +13,7 @@
   },
 
   "spotify": {
-    "clientSecret": "",
+    "clientSecret": "1ec59befd63d4cf195116749adc47c40",
     "clientID": "f70640d3a9044314b375d2e3644619cd"
   },
 
@@ -32,7 +32,7 @@
     "serverDeaf": true
   },
 
-  "lyricssettings": {
+  "lyrics settings": {
     "lyrics_finder": true,         "COMMENT": "my suggestion is to use ksoft_api on true and paste in the api key u can sign up, until u get the key use lyrics_finder which is way weaker but better the nothing",
     "ksoft_api": {
       "use_this_instead": false,
